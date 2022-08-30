@@ -1,0 +1,16 @@
+
+.zoom{
+    transition: transform .2s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.seccion{
+    padding-bottom: 60px;
+}
+
+.centrar{
+    margin: auto;
+    
+}

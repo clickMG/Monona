@@ -1,0 +1,53 @@
+@import 
+"./varColores", 
+"./varFuentes"
+;
+
+// .navbar-dark .navbar-toggler:visited{
+//     border: none;
+// }
+// .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link{
+//     color: $colorPpal;
+//     font-weight: bold;
+// }
+header{
+    .offcanvas-body{
+        background-color: rgb(0, 0, 0);
+    }
+
+    .navbar-dark{
+        .navbar-toggler{
+            border: none;
+            color: transparent;
+        }
+    }
+
+    
+    .navbar{
+        background-color: rgb(0, 0, 0);
+
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: $colorPpal;
+                    font-family: $textoLogo;
+                    &:hover{
+                        color: rgb(196, 150, 1);
+                    }
+                    
+                }
+                .active{
+                    font-weight: bold;
+                }
+            }
+           
+        }
+    }
+
+    .navbar-brand{
+        font-family: $textoLogo;
+        color: $colorPpal !important;
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,19 @@
+.alto{
+    height: 500px;
+    .formulario{
+        border: solid 1px $colorPpal;
+        margin: 30px;
+
+        form{
+            padding: 0 10%;
+
+            .form-control{
+                border: solid 1px $colorPpal;
+            }
+            .enviar{
+                text-align: center;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
