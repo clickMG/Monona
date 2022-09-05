@@ -3,28 +3,46 @@
 "./varFuentes"
 ;
 
-// .navbar-dark .navbar-toggler:visited{
-//     border: none;
-// }
-// .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show > .nav-link{
-//     color: $colorPpal;
-//     font-weight: bold;
-// }
 header{
     .offcanvas-body{
-        background-color: rgb(0, 0, 0);
+        background-color: $grisOscuro;
     }
 
     .navbar-dark{
         .navbar-toggler{
             border: none;
             color: transparent;
+
+            .menu-hamburguesa{
+                color: $colorPpal;
+                font-size: 40px;
+            }
+        }
+
+        .offcanvas-header{
+            background-color: $grisOscuro;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+
+            .botonCerrar{
+                background-color: transparent;
+                border: none;
+                color: $colorPpal;
+                font-size: 25px;
+                &:hover{
+                    color: $colorSec;
+                }
+            }
+        }
+        .offcanvas-body{
+            text-align: center;
         }
     }
 
     
     .navbar{
-        background-color: rgb(0, 0, 0);
+        background-color: $grisOscuro;
 
         .navbar-nav{
             .nav-item{
@@ -32,7 +50,7 @@ header{
                     color: $colorPpal;
                     font-family: $textoLogo;
                     &:hover{
-                        color: rgb(196, 150, 1);
+                        color: $colorSec;
                     }
                     
                 }
@@ -48,6 +66,7 @@ header{
         font-family: $textoLogo;
         color: $colorPpal !important;
         font-size: 30px;
+        align-self: center;
+        
     }
-
 }
